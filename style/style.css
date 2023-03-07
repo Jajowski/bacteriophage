@@ -1,0 +1,704 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Solitreo', cursive;
+}
+
+/* header */
+
+header{
+    height: 150px;
+    background-image: url(../img/ccc.jpg);
+    padding-top: 10px;
+
+}
+header h1{
+    font-size: 20px;    
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+header h1 a{
+    color: #ffffff;
+}
+
+header h1 a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+header nav ul {
+    margin-left: 400px;
+    display: flex;
+    justify-content: space-between;
+width: 900px;
+text-align: right;
+
+}
+
+header nav ul a{
+    color: #ffffff;
+    margin-right: 30px;
+    font-size: 20px; 
+    padding: 5px 10px;   
+    
+    
+}
+header nav a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* socialicons */
+
+.social{
+    width: 40px;
+    height: 80px;
+    position: fixed;
+    z-index: 10;
+    top: 240px;
+    right: 0px;
+
+}
+.facebook, .instagram{
+    width: 100%;
+    height: 50%;
+    
+}
+.facebook{
+    background-image: url(../img/fb\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+.instagram{
+    background-image: url(../img/in\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+.facebook:hover{
+    background-image: url(../img/facebook.png);
+    cursor: pointer;
+}
+.instagram:hover{
+    background-image: url(../img/instagram.png);
+    cursor: pointer;
+} 
+
+/* pirveligveri */
+.pirveliteksti{
+    display: flex;
+    margin-left: 60px;
+    margin-top: 50px;
+
+}
+.inpormaciasurati{
+    width: 200px;
+    height: 340px;
+    overflow: hidden;
+    
+}
+.inpormaciasurati img{
+    width: 100%;
+}
+.inpormaciebi{
+    width: 300px;
+    height: 400px;
+    
+}
+.inpormaciebi{
+    margin-left: 20px;
+}
+.inpormaciebi h2{
+    font-size: 22px;
+    font-weight: bold;
+}
+.inpormacia2, .inpormacia3, .inpormacia1{
+margin-top: 25px;
+}
+
+.agebulebebi {
+    display: flex;
+    margin-left: 500px;   
+}
+.agebuleba{
+    width: 312px;
+    height: 340px;
+}
+.agebuleba h2{
+    font-size: 22px;
+    font-weight: bold;
+    
+}
+.agebulebisteksti{
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+
+.agebulebissurati{
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    
+}
+
+.agebulebissurati img{
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        color: #e6e3dd;
+        font-weight: bold;
+      background-color: rgb(139, 202, 202);
+      font-size: 14px;
+    }
+    h2{
+        font-size: 14px;
+    }
+   header h1{
+    font-size: 14px;
+   }
+    header nav ul{
+        
+width: 100%;
+text-align: left;
+        margin-left: 10px;
+        margin-top: 0px;
+        
+    }
+    header nav ul a{
+        font-size: 14px;
+    }
+    .social{
+        display: none;
+    }
+    .pirveliteksti, .agebulebebi{
+        width: 45%;
+    }
+    .pirveliteksti{
+        display: block;
+
+    }
+    .agebulebebi{
+        margin-left: 60px ;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+    }
+   
+    
+  }
+    
+
+    
+
+
+/* footer */
+
+footer{
+    background-color: #000000;
+    height: 120px;
+    text-align: center;
+    background-image: url(../img/coverimage.jpg);
+}
+footer p{
+
+    color: #ffffff;
+    
+}
+
+.email a, .tel a{
+    color: #4492eb;
+}
+.sakontakto{
+    font-size: 18px;
+    padding-top: 5px;
+   
+    
+}
+.email {
+    margin-bottom: 2px;
+}
+
+
+.upleba{
+    color: #ffffff;
+margin-top: 5px;
+   font-size: 14px;
+
+    
+}
+
+/* meoregveri */
+.taksonomiah2{
+    text-align: center;
+    margin-top: 10px;
+}
+.taksonomiisteksti, .taksonomiisteksti2 {
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+.square{
+    margin-left: 60px;
+}
+.modzravipagi{
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+overflow: hidden;
+background-color: #000000;}
+
+.pagissurati{
+    width: 100%;
+height: 100%;
+position: relative;
+animation: pagismodzraoba 30s infinite
+
+}
+
+    @keyframes pagismodzraoba {
+        0%{
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+        /* 25%{
+            margin-top: 0px;
+            margin-left: 25%;
+
+        }
+        50%{
+            margin-top: 0px;
+            margin-left: 50%;
+        }
+        75%{
+            margin-top: 0px;
+            margin-left: 75%;
+        } */
+        100%{
+            margin-top: 0px;
+            margin-left: 100%;
+        }
+    }
+
+
+.jachvianebi{
+    display: flex;
+     margin-left: 150px;
+}
+.jachvianebi ul li{
+    font-style: italic;
+}
+.orjachviani h3, .ertjachviani h3, .rna h3{
+    font-size: 20px;
+}
+.orjachviani ul li, .ertjachviani ul li, .rna ul li{
+    display: none;
+}
+.orjachviani:hover ul li{
+    display: block;
+    color: #000000;
+    font-style: italic;
+    cursor: pointer;
+}
+.ertjachviani:hover ul li{
+    display: block;
+    color: #000000;
+    font-style: italic;
+    cursor: pointer;
+}
+.rna:hover ul li{
+    display: block;
+    color: #000000;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.orjachviani{
+    text-align: center;
+    width: 300px;
+    height: 250px;
+    border: 2px dashed #313235;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-left: 30px ;
+}
+.ertjachviani, .rna{
+    text-align: center;
+    width: 300px;
+    height: 80px;
+    border: 2px dashed #313235;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    margin-left: 30px ;
+
+}
+.orjachviani:hover, .ertjachviani:hover, .rna:hover{
+    background-color: #c2c4ca;
+}
+
+
+/* mesamegverdi */
+
+.cikli{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.pagebisgamravleba{
+    text-align: center;
+}
+.artiklebiskonteineri{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    
+}
+article{
+    width: 300px;
+    height: 460px;
+    border: 3px solid #313235;
+    padding-left: 15px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+article:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px;
+    transform: scale(1.05);
+}
+article h2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+article p{
+    margin-top: 5px;
+}
+ 
+/* meotxegverdi */
+.terapiisteksti{
+    margin-left: 500px;
+    margin-top: 430px;
+    margin-bottom: 100px;
+    width: 450px;
+    height: 300px;
+    overflow-x: scroll;
+    text-align: center;
+}
+.terapiateksti{
+    margin-top: 20px;
+    width: 400px;
+    position: relative;
+
+    
+}
+
+.gifgif1{
+    
+    position: absolute;
+    top: 540px;
+    left: -80px; 
+}
+.gifgif2{
+    position: absolute;
+    top: 220px;
+    left: 360px; 
+    
+}
+.gifgif3{
+    position: absolute;
+    top: 220px;
+    left: 760px; 
+    
+}
+.gifgif4{
+    position: absolute;
+    top: 570px;
+    left: 980px; 
+    
+}
+
+.gifgif im{
+    width: 100%;
+    height: 100%;
+}
+
+/* mexutegverdi */
+.tsamalikonteineri{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px; 
+    margin-top: 30px;
+}
+
+.tsamali{
+    width: 400px;
+    height: 450px;
+    border: 3px solid #4492eb;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    
+}
+
+.tsamali h2{
+    margin-top: 5px;
+    
+    text-align: center;
+}
+.tsamali p {
+    margin-left: 20px;
+    color: #000000;
+   
+}
+.tsamali p a{
+    font-weight: bold;
+}
+.tsamali p a:hover{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.tsamali img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.minusi, .plusi{
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;   
+}
+
+
+
+
+.kalatasurati{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+    background-image: url(../img/shopping-cart.png);
+    background-size: 100%;
+}
+.kalatasurati:hover{
+    background-image:url(../img/peradi.png);
+}
+
+.kalatakonteineri{
+    display: flex;
+    margin-left: 250px;
+}
+.damatebitikitxva{
+    width: 500px;
+    height: 360px;
+    margin: 50px auto;
+    background-color: #127575;
+    padding-top: 3px;
+    border-radius: 10px;
+}
+.damatebit{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.damatebitikitxva input{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+width: 200px;
+height: 50px;
+border-radius: 5px;
+padding: 14px;
+outline: none;
+border: none;
+font-size: 16px;
+
+}
+
+
+
+.damatebitikitxva textarea{
+    margin-left: 20px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.damatebitikitxva input[type="submit"]{
+    cursor: pointer;
+    font-size: 18px;
+
+    
+
+}
+.damatebit{
+    color: #0c0c0c;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.tsamalikonteineri a:visited{
+    color: #1e1f20;
+}
+.tsamalikonteineri a:active{
+    
+    color: #127575;
+}
+.tsamalisurati{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.aghtsera{
+    margin-bottom: 10px;
+}
+
+
+.reg  {
+  width: 200px;
+  height: 200px;
+  margin-left: 601px;
+  
+}
+
+.reg p {
+    font-size: 18px;
+    margin-top: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.reg input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #235894;
+    color: #000000;
+    font-size: 20px;
+border: none;
+    border-radius: 5px;
+
+    margin-top: 20px;
+}
+
+
+
+.reg input[type="checkbox"] {
+    width: 10%;
+margin-top: 10px;
+cursor: pointer;
+
+
+}
+
+.reg label {
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 800px) {body {
+        color: #e6e3dd;
+        font-weight: bold;
+      background-color: rgb(139, 202, 202);
+      font-size: 14px;
+    }
+    h2{
+        font-size: 14px;
+    }
+   header h1{
+    font-size: 14px;
+   }
+    header nav ul{
+        
+width: 100%;
+text-align: left;
+        margin-left: 10px;
+        margin-top: 0px;
+        
+    }
+    header nav ul a{
+        font-size: 14px;
+    }
+    .social{
+        display: none;
+    }@media only screen and (max-width: 600px) {
+        body {
+            color: #e6e3dd;
+            font-weight: bold;
+          background-color: rgb(139, 202, 202);
+          font-size: 14px;
+        }
+        h2{
+            font-size: 14px;
+        }
+       header h1{
+        font-size: 14px;
+       }
+        header nav ul{
+            
+    width: 100%;
+    text-align: left;
+            margin-left: 10px;
+            margin-top: 0px;
+            
+        }
+        header nav ul a{
+            font-size: 14px;
+        }
+        .social{
+            display: none;
+        }
+        .reg{
+            margin-left: 60px;
+            
+        }
+        .tsamali h2{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+.damatebitikitxva{
+    width: 200px;
+    height: 260px;
+    margin: 50px auto;
+    background-color: #127575;
+    padding-top: 3px;
+    border-radius: 10px;
+}
+.damatebitikitxva textarea{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}.damatebitikitxva{
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+ input[type="text"]{
+    margin-left: 60px;
+ }}
+    
+
+    }
+
+
+
+
